@@ -14,13 +14,13 @@ export function FeedbackTypeStep({
         <span className="text-xl leading-6">Deixe seu Feedback</span>
         <CloseButton />
       </header>
-      <div className="flex py-8 gap-2 w-full">
+      <div className="flex w-full gap-2 py-8">
         {Object.entries(feedbackTypes).map(([key, value]) => (
           <button
             key={key}
             className="
-                bg-zinc-800 rounded-lg py-5 w-24 flex-1 flex flex-col
-                items-center gap-2 border-2 border-transparent
+                flex w-24 flex-1 flex-col items-center gap-2 rounded-lg
+                border-2 border-transparent bg-zinc-800 py-5
                 hover:border-brand-500 focus:border-brand-500
                 focus:outline-none
               "
